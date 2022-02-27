@@ -12,11 +12,19 @@ public class Exercicios_logica {
         //Cria um objeto random
         Random randomico = new Random();
 
+<<<<<<< HEAD
         //De 0 Até 10
         int recebeRandomico = randomico.nextInt(11);
 
         //Mostra o número sorteado (apenas para teste no console)
         System.out.println("Número sorteado: " + recebeRandomico);
+=======
+        //AtÃ© 10
+        int recebeRandomico = randomico.nextInt(11);
+
+        //Mostra o nÃºmero sorteado
+        System.out.println("NÃºmero sorteado: " + recebeRandomico);
+>>>>>>> 348bd7859b9fc85a4ebac6966d39dfbe61065be5
         
         
         //Chances de jogar (vidas)
@@ -26,10 +34,10 @@ public class Exercicios_logica {
         while(chances > 0) {
             
         //Recebe seu palpite via caixa de entrada
-        int palpite = Integer.parseInt(JOptionPane.showInputDialog("Insira um número de 0 até 10"));
+        int palpite = Integer.parseInt(JOptionPane.showInputDialog("Insira um nÃºmero de 0 atÃ© 10"));
 
         if(recebeRandomico == palpite){
-            JOptionPane.showMessageDialog(null, "Acertou! Número escolhido: " + palpite);
+            JOptionPane.showMessageDialog(null, "Acertou! NÃºmero escolhido: " + palpite);
             //Fecha o sistema
             System.exit(0);
             
@@ -37,13 +45,13 @@ public class Exercicios_logica {
             
              //retira uma chance
              chances--;
-             JOptionPane.showMessageDialog(null, "Errou! Número escolhido: " + palpite + ", foi maior que o número sorteado, suas chances: " + chances);
+             JOptionPane.showMessageDialog(null, "Errou! NÃºmero escolhido: " + palpite + ", foi maior que o nÃºmero sorteado, suas chances: " + chances);
 
         } else{
             
              //retira uma chance
              chances--;
-             JOptionPane.showMessageDialog(null, "Errou! Número escolhido: " + palpite + ", foi menor que o número sorteado, suas chances: " + chances);
+             JOptionPane.showMessageDialog(null, "Errou! NÃºmero escolhido: " + palpite + ", foi menor que o nÃºmero sorteado, suas chances: " + chances);
             
         }
         
