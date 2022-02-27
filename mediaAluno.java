@@ -3,6 +3,9 @@ package exercicios_logica;
 import javax.swing.JOptionPane;
 
 
+/*
+Exercício para cálculo da média de aluno e verificação de status do mesmo
+*/
 
 public class Exercicios_logica {
 
