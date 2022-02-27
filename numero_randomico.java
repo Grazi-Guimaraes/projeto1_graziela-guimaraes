@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
  *
  * @author Graziela
  */
+
 public class Exercicios_logica {
 
     public static void main(String[] args) {
@@ -15,10 +16,10 @@ public class Exercicios_logica {
         //Cria um objeto random
         Random randomico = new Random();
 
-        //Até 10
-        int recebeRandomico = randomico.nextInt(10);
+        //De 0 Até 10
+        int recebeRandomico = randomico.nextInt(11);
 
-        //Mostra o número sorteado
+        //Mostra o número sorteado (apenas para teste no console)
         System.out.println("Número sorteado: " + recebeRandomico);
         
         
