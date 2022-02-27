@@ -1,0 +1,57 @@
+package exercicios_logica;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Graziela Guimarães
+ */
+public class Exercicios_logica {
+    
+     
+        
+
+    public static void main(String[] args) {
+        
+        
+        //Exercício - como calcular imc e testar peso
+        Double altura = Double.parseDouble(JOptionPane.showInputDialog("Informe sua altura em metros e centímetros"));
+        Double peso = Double.parseDouble(JOptionPane.showInputDialog("Informe seu peso em Kilos e gramas"));
+        
+        //Atribuindo o valor vindo de um método a uma variável
+        Double imcRecebido = imc(altura, peso);
+        
+        //Fazendo os teste de peso
+        if(imcRecebido < 18.5){
+         JOptionPane.showMessageDialog(null, "Abaixo do peso");
+     
+        } else if(imcRecebido >= 18.5 && imcRecebido <= 24.9){
+            JOptionPane.showMessageDialog(null,"Peso normal");
+    
+        }else if(imcRecebido >= 25 && imcRecebido <= 29.9){
+            JOptionPane.showMessageDialog(null, "Sobrepeso (Obesidade grau |)");
+    
+        }else if(imcRecebido >= 30 && imcRecebido <= 39.9){
+            JOptionPane.showMessageDialog(null, "Obesidade (Grau ||)");
+    
+        }else{
+            JOptionPane.showMessageDialog(null, "Obesidade (Grau ||| - Grave)");
+    
+        }
+        
+        
+       }
+    
+     //Método que faz o cálculo
+    public static Double imc (Double alt, Double pes) {
+        
+        Double imcPessoa =  pes / (alt * alt);
+        
+        //String mostraIMC = "Seu IMC é: " + imcPessoa;
+        
+         //JOptionPane.showMessageDialog(null, mostraIMC);
+    
+            return imcPessoa;
+    }
+     
+    }
