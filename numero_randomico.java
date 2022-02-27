@@ -12,7 +12,7 @@ public class Exercicios_logica {
 
     public static void main(String[] args) {
 
-/******************************************/
+
         //Cria um objeto random
         Random randomico = new Random();
 
