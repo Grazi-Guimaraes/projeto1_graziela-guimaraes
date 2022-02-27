@@ -3,10 +3,6 @@ package exercicios_logica;
 import java.util.Random;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Graziela
- */
 
 public class Exercicios_logica {
 
