@@ -1,2 +1,2 @@
-# projeto1_graziela-guimaraes
+# Exercícios para iniciantes
 Exercícios Java 
